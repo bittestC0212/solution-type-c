@@ -39,6 +39,20 @@ public class Main {
 	}
 	
 	public static boolean checkAnswer(int answer) {
-		return true;
+		if(randomNumber == answer) {
+			return true;
+		}else if(randomNumber >answer){
+			 count ++;
+			 min= answer;	 
+			 return false;
+		}
+		else{
+			 count ++;
+			 max=answer;
+			 return false;
+		}
+		
 	}
 }
+
+
